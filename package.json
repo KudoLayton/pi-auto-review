@@ -1,6 +1,6 @@
 {
   "name": "@kudolayton/pi-auto-review",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Local fork extension for bounded automatic permission review with Plan and Action Fusion integration. (KudoLayton Windows distribution)",
   "type": "module",
