@@ -4,13 +4,13 @@ Independent Windows distribution of @narumitw/pi-auto-review. Source and copyrig
 
 ## Install
 
-Requires Node.js >=22.19, npm, Git, PowerShell 7, and an unmodified Pi 0.85.1. Extensions run with Pi's OS permissions.
+Requires Node.js >=22.19, npm, Git, PowerShell 7, and Pi with the public `modelRegistry.streamSimple()` API (verified with Pi 0.99.1). Older hosts fail safely to manual approval rather than silently dropping the review policy. Extensions run with Pi's OS permissions.
 
 ```powershell
-pi install git:github.com/KudoLayton/pi-auto-review@v0.1.1
+pi install git:git@github.com:KudoLayton/pi-auto-review.git
 ```
 
-This command becomes available after the public repository and tag are published. For a local smoke, use  `pi -e ./path/to/pi-auto-review`. No build or source checkout is needed on the destination PC.
+This installs the default branch. For a local smoke, use `pi -e ./path/to/pi-auto-review`. No build or source checkout is needed on the destination PC.
 
 ## First startup
 
@@ -35,7 +35,7 @@ Authenticate with Pi separately. Automatic review requests use openai-codex/code
 
 ## Updates and removal
 
-Install a newer explicit tag to upgrade; install a previous tag to roll back. These pinned releases do not move automatically to newer tags. Remove the exact source shown by  `pi list` with  `pi remove <source>`. User settings remain outside the package and survive removal. Do not simultaneously load the old local or upstream copy of the same extension.
+For the default-branch install, run `pi update --extensions`. Alternatively, install an explicit published tag to pin a release; install a previous tag to roll back. These pinned releases do not move automatically to newer tags. Remove the exact source shown by  `pi list` with  `pi remove <source>`. User settings remain outside the package and survive removal. Do not simultaneously load the old local or upstream copy of the same extension.
 
 ## License
 
