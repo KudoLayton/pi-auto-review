@@ -10,5 +10,7 @@
   "releaseVersion": "0.1.2",
   "portedFixCommits": ["00187ba2a78fa120f1ed784fa2786bf32c0d4ac9"],
   "preservedDistributionPolicies": ["authorization-only manual override", "non-cancelled denial does not terminate the turn"],
+  "verifiedSourceCommit": "251312016fb9b532ea41b30f4cd352c4a65100c2",
+  "sourceVerification": "Rebased source changes already present; distribution approval and cancellation policies retained; see docs/standalone-sync.md",
   "bootstrapSha256": "fc4ed26a8911e28802aa0a46a1c2861f3d65e17c5a375a73d4d7f5fa64ea9ec8"
 }
